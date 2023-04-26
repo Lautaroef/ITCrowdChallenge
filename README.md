@@ -2,8 +2,6 @@
 
 This readme file explains how to run the project and how it works.
 
-**The Live project deployed in Vercel won't work as expected as the backend is not deployed. You must run the project locally to see the full functionality.**
-
 ## Installation
 
 1. Clone the project repository from Github.
