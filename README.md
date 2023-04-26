@@ -31,16 +31,16 @@ You can now access the project by visiting `http://localhost:3000` in your brows
 
 ## Frontend Working
 
-1. The frontend is a TypeScript Next.js application that interacts with the backend API endpoints written in Node.js.
+1. The frontend is a **TypeScript Next.js application** that interacts with the backend API endpoints written in **Node.js**.
 2. The primary features of the website include displaying games on the homepage and allowing users to add games to their favorites list.
-3. Local storage is used to save user-selected games as favorites. When a user clicks the "Add to Favorites" button, the game is saved to their device's local storage. This action also updates the setFavorites() hook, allowing the homepage to display the updated list of favorites. The favorites are not saved in a database to avoid the need for adding authentication features.
+3. **Local storage** is used to save user-selected games as favorites. When a user clicks the "Add to Favorites" button, the game is saved to their device's local storage. This action also updates the setFavorites() hook, allowing the homepage to display the updated list of favorites. The favorites are not saved in a database to avoid the need for adding authentication features.
 4. An environment variable called name `process.env.NEXT_APP_API_URL` is used to call backend api using the axios.
-5. Cypress is used for frontend testing. Run `npm run cypress` to initiate the tests, which will open a window where you can select components, choose a browser, and pick a test to run.
+5. **Cypress** is used for frontend testing. Run `npm run cypress` to initiate the tests, which will open a window where you can select components, choose a browser, and pick a test to run.
 
 ## Backend Working
 
-1. Prisma is used alongside PostgreSQL for the backend database. To pre-populate the database, execute npm run feed:data after following the steps in "BACKEND SETUP."
-2. Zod library is used to validate the input coming from the client and if OK then create the game in the database.
-3. Jest is utilized for backend API testing. Use `npm run test` to execute the tests.
+1. **Prisma** is used alongside **PostgreSQL** for the backend database. To pre-populate the database, execute `npm run feed:data` after following the steps in the backend setup section.
+2. **Zod** library is used to validate the input coming from the client and if OK then create the game in the database.
+3. **Jest** is utilized for backend **API testing**. Use `npm run test` to execute the tests.
 4. An environment variable called name `process.env.ORIGIN` is used to setup cors with the frontend.
-5. The backend offers Swagger documentation for all API endpoints, accessible at the "/api-docs" endpoint.
+5. The backend offers **Swagger** documentation for all API endpoints, accessible at the "/api-docs" endpoint.
