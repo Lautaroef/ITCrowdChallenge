@@ -1,6 +1,6 @@
 # ITCrowd Technical Test
 
-This readme file explains how to run the project. Please follow the instructions below.
+This readme file explains how to run the project and how it works.
 
 ## Installation
 
