@@ -1,0 +1,1 @@
+Update the ORIGIN env variable in the server with the URL Vercel provided
