@@ -31,16 +31,17 @@ You can now access the project by visiting `http://localhost:3000` in your brows
 
 ## Frontend Working
 
-1. The frontend is a **TypeScript Next.js application** that interacts with the backend API endpoints written in **Node.js**.
-2. The primary features of the website include displaying games on the homepage and allowing users to add games to their favorites list.
-3. **Local storage** is used to save user-selected games as favorites. When a user clicks the "Add to Favorites" button, the game is saved to their device's local storage. This action also updates the setFavorites() hook, allowing the homepage to display the updated list of favorites. The favorites are not saved in a database to avoid the need for adding authentication features.
-4. An environment variable called name `process.env.NEXT_APP_API_URL` is used to call backend api using the axios.
-5. **Cypress** is used for frontend testing. Run `npm run cypress` to initiate the tests, which will open a window where you can select components, choose a browser, and pick a test to run.
+1. The frontend is a **TypeScript Next.js application** deployed in **Vercel** that interacts with the backend API endpoints written in **Node.js**.
+2. The website's main features involve showcasing games on the homepage and enabling users to add games to their favorites list.
+3. **Local storage** is employed for saving user-selected games as favorites. When users click "Add to Favorites," the game is stored on their device's local storage. This eliminates the need for database storage and authentication features for storing the user's favorites.
+4. The environment variable `process.env.NEXT_APP_API_URL` is utilized for making backend API calls using Axios.
+5. For testing, the **Cypress** library was used. You can run `npm run cypress` to initiate the tests, which will open a window where you can select components, choose a browser, and pick a test to run.
 
 ## Backend Working
-
-1. **Prisma** is used alongside **PostgreSQL** for the backend database. To pre-populate the database, execute `npm run feed:data` after following the steps in the backend setup section.
-2. **Zod** library is used to validate the input coming from the client and if OK then create the game in the database.
-3. **Jest** is utilized for backend **API testing**. Use `npm run test` to execute the tests.
-4. An environment variable called name `process.env.ORIGIN` is used to setup cors with the frontend.
-5. The backend offers **Swagger** documentation for all API endpoints, accessible at the "/api-docs" endpoint.
+1. The backend is entirely developed in **Node.js** with **TypeScript**.
+2. The data is stored in a **PostgreSQL** database, deployed using **Supabase** services, which offers a free hosted SQL database. To pre-populate the database, run npm run feed:data after following the backend setup instructions.
+3. For the ORM I made use of **Prisma**. Which allows in a couple of steps to add an extra layer of security before uploading new objects to the database, plus it offers easier ways to interact with the db making us the developer to provide more value faster. 
+4. For validating the data coming from the front-end, I used the **Zod** library.
+5. **Jest** is utilized for backend **API testing**. Use `npm run test` to execute the tests.
+6. The environment variable process.env.ORIGIN is employed to configure CORS with the frontend.
+7. The backend provides Swagger documentation for all API endpoints, available at the "/api-docs" endpoint.
