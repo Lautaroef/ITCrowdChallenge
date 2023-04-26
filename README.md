@@ -9,41 +9,23 @@ This readme file explains how to run the project and how it works.
 
 ## Frontend Setup
 
-1. Navigate to the client directory by running the following command:
+1. Navigate to the client directory by running the following command: `cd client`
 
-   `cd client`
-
-2. Install the required dependencies by running the following command:
-
-   `npm i`
+2. Install the required dependencies by running the following command: `npm i`
 
 3. Update the `.env` file in the root directory of the project and set the necessary environment variables.
 
-4. Start the frontend server by running the following command:
-
-   `npm start`
+4. Start the frontend server by running the following command: `npm start`
 
 ## Backend Setup
 
-1.  Navigate to the server directory by running the following command:
+1.  Navigate to the server directory by running the following command: `cd server` and run `npm i`
 
-    `cd server`
+2.  Push the database by running the following command: `npx prisma db push`
 
-    and run
+3.  Feed the database with initial data by running the following command: `npm run feed:data`
 
-    `npm i`
-
-2.  Push the database by running the following command:
-
-    `npx prisma db push`
-
-3.  Feed the database with initial data by running the following command:
-
-    `npm run feed:data`
-
-4.  Start the backend server by running the following command:
-
-    `npm run start`
+4.  Start the backend server by running the following command: `npm run start`
 
 You can now access the project by visiting `http://localhost:3000` in your browser.
 
